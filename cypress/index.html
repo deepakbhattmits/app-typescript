@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Tutorials</title>
+    <style>
+        body {
+            padding: 30px 100px;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        hr {
+            margin: 70px 0 !important;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1 id='header1'>Welcome to Cypress Tutorials</h1>
+    <h2 id='header2'>We will use this website to learn cypress commands</h2>
+    <hr>
+    <a href='about.html' title='link about'>About</a>
+
+    <hr >
+    <label for="start">Start date:</label>
+
+<input type="text" id="start" value="2018-07-22">
+    <hr>
+    <p>The available list of courses</p>
+    <ul class="course-list">
+        <li class="list1 web">Cypress</li>
+        <li class="list2 web" name="Selenium">Selenium</li>
+        <li class="list3 mobile">Appium</li>
+        <li class="list4 web mobile">wdio</li>
+        <li class="list5 mobile">detox</li>
+        <li class="list6 programming">javascript</li>
+        <li class="list7 web">html</li>
+        <li class="list8 web">css</li>
+        <li class="list9 web" style='display:none'>react</li>
+    </ul>
+    <hr>
+    <p>The available list of countries</p>
+    <ul class="country-list">
+        <li class="list1">Jordan</li>
+        <li class="list2">Netherldans</li>
+    </ul>
+    <hr>
+    <p>The available list of snacks</p>
+    <input type="checkbox" id="Banana" name="Banana" value="Banana">
+    <label for="vehicle1"> Banana</label><br>
+    <input type="checkbox" id="Nuts" name="Nuts" value="Nuts">
+    <label for="vehicle2"> Nuts</label><br>
+    <input type="checkbox" id="Fries" name="Fries" value="Fries">
+    <label for="vehicle3"> Fries</label><br><br>
+    <hr>
+    <p>Are you?</p>
+    <div>
+        <input type="radio" id="Developer" name="Developer" value="Developer">
+        <label for="huey">Developer</label>
+    </div>
+
+    <div>
+        <input type="radio" id="Tester" name="Tester" value="Tester">
+        <label for="dewey">Tester</label>
+    </div>
+
+    <div>
+        <input type="radio" id="Manager" name="Manager" value="Manager">
+        <label for="louie">Manager</label>
+    </div>
+    <hr>
+    <p>Select your course</p>
+
+    <select name="courses" id="courses">
+        <option value="course1">cypress</option>
+        <option value="course2">selenium</option>
+        <option value="course3">appium</option>
+        <option value="course4">wdio</option>
+    </select>
+
+    <hr>
+
+    <input type='text' id='inputOp'  onclick="this.value='Clicked'" onfocus="this.value='Focused'" onblur="this.value='Blur'" value='focus and blur and click'/>
+    <p>HTML Table</p>
+    <table>
+        <tr>
+            <th>Invoice number</th>
+            <th>Invoice Amount</th>
+            <th>Invoice document</th>
+        </tr>
+        <tr>
+            <td>Invoice_001</td>
+            <td>200</td>
+            <td><button class="btn btn-primary invoice-button">Download Invoice</button></td>
+        </tr>
+        <tr>
+            <td>Invoice_002</td>
+            <td>150</td>
+            <td><button class="btn btn-primary">Download invoice</button></td>
+        </tr>
+        <tr>
+            <td>Invoice_003</td>
+            <td>100</td>
+            <td><button class="btn btn-primary">Download invoice</button></td>
+        </tr>
+        <tr>
+            <td>Invoice_004</td>
+            <td>80</td>
+            <td><button class="btn btn-primary">Download invoice</button></td>
+        </tr>
+        <tr>
+            <td>Invoice_005</td>
+            <td>300</td>
+            <td><button class="btn btn-primary">Download invoice</button></td>
+        </tr>
+        <tr>
+            <td>Invoice_006</td>
+            <td>25</td>
+            <td><button class="btn btn-primary">Download invoice</button></td>
+        </tr>
+    </table>
+    <hr>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+    </div>
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h2 class="display-4">Pricing</h2>
+        <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap
+            example.
+            It's built with default Bootstrap components and utilities with little customization.</p>
+    </div>
+
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>10 users included</li>
+                        <li class='feature2'>2 GB of storage</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>20 users included</li>
+                        <li class='feature2'>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <input type="button" onmouseover="this.style.background='red'" onmouseout="this.style.background='#007bff'" onmousedown="this.value='Long Press'"  onmouseup="this.value='Trigger'" class="button-get btn btn-lg btn-block btn-primary" ondblclick="this.value='Double Click'" oncontextmenu="this.value='Right Click'" value="Click Me"/>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>30 users included</li>
+                        <li class='feature2'>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <form class="form-signin">
+            <h2 class="h3 mb-3 font-weight-normal">Please sign in</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="text" id="inputName" data-cy="name" class="form-control" placeholder="Enter your Name" required autofocus disabled>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" data-cy="email" class="form-control" placeholder="Email address" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword"  data-cy="password" class="form-control" placeholder="Password" required>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="custom-login btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+        </form>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+<script>
+    document.cookie = "username=Deepak";
+    var today = new Date();
+  var date = today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate();
+    document.getElementById('start').value= date
+</script>
+
+</html>
