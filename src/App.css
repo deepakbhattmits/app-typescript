@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 30% auto;
+  align-items: flex-start;
 }
 
 .App-logo {
