@@ -7,7 +7,6 @@ import { FC, useState } from 'react'
 import NewTodo from './components/NewTodo'
 import TodoList from './components/TodoList'
 import { ITodo } from './components/model/todo.model'
-import './App.css'
 
 const App: FC = (): JSX.Element => {
   const [todos, setTodos] = useState<ITodo[]>([])
