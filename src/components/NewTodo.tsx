@@ -1,12 +1,10 @@
 /** @format */
 
-import { FC, FormEvent, useState } from 'react'
+import {FC,FormEvent,useState} from 'react';
+import {INewTodoProp} from './model/todo.model'
 import './NewTodo.css'
 
-interface INewTodoProp {
-  addTodo: (text: string) => void
-}
-const NewTodo: FC<INewTodoProp> = ({ addTodo }) => {
+const NewTodo: FC<INewTodoProp> = ({ addTodo }):JSX.Element => {
   const [todo, setTodo] = useState<string>('')
 
   const handleChange = (e: any) => {
